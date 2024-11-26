@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>Notebook Cover Designer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Notebook Cover Designer</h1>
+    </header>
+    <main>
+        <form id="designerForm">
+            <section class="upload-section">
+                <h2>Upload Images</h2>
+                <label for="frontImage">Front Cover Image:</label>
+                <input type="file" id="frontImage" required>
+                
+                <label for="backImage">Back Cover Image:</label>
+                <input type="file" id="backImage" required>
+            </section>
+
+            <section class="text-section">
+                <h2>Enter Text</h2>
+                <label for="textInput">Name (max 16 characters, Unicode supported):</label>
+                <input type="text" id="textInput" maxlength="16" placeholder="Enter name" required>
+            </section>
+
+            <section class="options-section">
+                <h2>Notebook Options</h2>
+                <label for="pageSize">Page Size:</label>
+                <select id="pageSize">
+                    <option value="A4">A4</option>
+                    <option value="A5">A5</option>
+                </select>
+
+                <label for="binding">Binding Type:</label>
+                <select id="binding">
+                    <option value="spiral">Spiral</option>
+                    <option value="viro">Viro</option>
+                </select>
+            </section>
+
+            <section class="controls-section">
+                <h2>Position and Adjustments</h2>
+                <div class="controls">
+                    <button type="button" id="moveUp">Move Up</button>
+                    <button type="button" id="moveDown">Move Down</button>
+                    <button type="button" id="moveLeft">Move Left</button>
+                    <button type="button" id="moveRight">Move Right</button>
+                    <button type="button" id="zoomIn">Zoom In</button>
+                    <button type="button" id="zoomOut">Zoom Out</button>
+                    <button type="button" id="rotate">Rotate</button>
+                </div>
+            </section>
+
+            <button type="button" id="generateButton">Generate Cover</button>
+        </form>
+
+        <section id="previewSection">
+            <h2>Preview</h2>
+            <canvas id="previewCanvas"></canvas>
+            <button id="downloadButton">Download as PNG</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Notebook Cover Designer. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

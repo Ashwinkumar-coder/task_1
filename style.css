@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #007acc;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 1em;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input, select, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+button {
+    background: #007acc;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005f99;
+}
+
+canvas {
+    display: block;
+    margin: 1em auto;
+    border: 1px solid #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #007acc;
+    color: #fff;
+    margin-top: 2em;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        margin: 1em;
+        padding: 1em;
+    }
+
+    input, select, button {
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 0.8em;
+    }
+
+    canvas {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        padding: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1em 0.5em;
+    }
+
+    main {
+        margin: 1em;
+        padding: 1em;
+    }
+
+    label {
+        font-size: 0.9em;
+    }
+
+    input, select, button {
+        font-size: 0.9em;
+        padding: 0.6em;
+    }
+
+    canvas {
+        margin: 0.5em auto;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        padding: 0.5em;
+    }
+}
